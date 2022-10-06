@@ -3,7 +3,7 @@
     "seed": "ts-node prisma/seed.ts"
   },
   "scripts": {
-    "test": "ts-node main.ts",
+    "test": "ts-node src/main.ts",
     "prisma-seed": "prisma seed"
   },
   "dependencies": {
