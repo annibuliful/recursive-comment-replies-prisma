@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "ts-node main.ts"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
