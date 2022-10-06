@@ -11,8 +11,9 @@ async function main() {
       },
       include: {
         replies: {
+          // parent level
           include: {
-            replies: true,
+            replies: true, // chil level
           },
         },
       },

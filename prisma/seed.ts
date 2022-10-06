@@ -55,7 +55,7 @@ async function createMockUser() {
     create: userB,
   });
 
-  console.log('created user info', resultB);
+  console.log('created user info', { resultB, resultA });
 }
 
 async function createMockComment() {
@@ -99,7 +99,7 @@ async function createMockChildReply() {
   const childReply: Prisma.ReplyUncheckedCreateInput = {
     id: 2,
     parentReplyId: 1, // parent reply id come from createMockParentReply()
-    content: 'mock_parent_reply',
+    content: 'mock_child_reply_from_user_b',
     authId: USER_B_AUTH_ID,
     commentId: 1, // comment id come from createMockComment()
   };
