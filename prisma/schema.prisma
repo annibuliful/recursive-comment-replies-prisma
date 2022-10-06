@@ -65,7 +65,7 @@ model Comment {
 
 model Reply {
   id            Int      @id @default(autoincrement())
-  content       String   @default("")
+  content       String
   author        User     @relation(fields: [authId], references: [authId])
   authId        String
   comment       Comment? @relation(fields: [commentId], references: [id])
